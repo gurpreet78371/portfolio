@@ -464,7 +464,7 @@ section .title::after {
 /* experience section starts */
 .experience .title::after {
   background: #111;
-  font-size: 19px;
+  font-size: 18px;
   content: "what I've done";
 }
 .experience .date {
