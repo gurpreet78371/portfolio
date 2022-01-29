@@ -35,6 +35,9 @@ section {
   padding: 0 80px;
   margin: auto;
 }
+.text {
+  text-align: justify;
+}
 .about,
 .education,
 .skills,
@@ -691,32 +694,6 @@ section .title::after {
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-  .about .about-content .left img {
-    height: 350px;
-    width: 350px;
-  }
-  .experience .date {
-    padding-top: 3px;
-    float: right;
-  }
-  .experience .experience-level {
-    display: block;
-  }
-  .projects .project-content {
-    flex-direction: column;
-    align-content: center;
-  }
-  .recommendations .outer .card {
-    height: 300px;
-  }
-}
-
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 947px) {
   .menu-btn {
     display: block;
     z-index: 999;
@@ -746,6 +723,32 @@ section .title::after {
     margin: 20px 0;
     font-size: 25px;
   }
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  .experience .date {
+    padding-top: 3px;
+    float: right;
+  }
+  .experience .experience-level {
+    display: block;
+  }
+  .projects .project-content {
+    flex-direction: column;
+    align-content: center;
+  }
+  .recommendations .outer .card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
   .home .home-content .text-2 {
     font-size: 70px;
   }
@@ -776,7 +779,7 @@ section .title::after {
     margin-bottom: 35px;
   }
   .recommendations .outer .card {
-    height: 240px;
+    height: 380px;
   }
 }
 
@@ -836,5 +839,9 @@ section .title::after {
   }
   .projects .container {
     width: 100%;
+  }
+  .education .max-width,
+  .experience .max-width {
+    max-width: 90%;
   }
 }
